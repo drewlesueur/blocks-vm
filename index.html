@@ -1,0 +1,13 @@
+<h1>blocks-vm</h1>
+
+
+<script src="poor_modules/poor-module.js"></script>
+<script src="blocks-vm.js"></script>
+<script type="blocks" id="blocks-code">
+say hello_world
+</script>
+<script>
+var blocks = poorModule("blocks-vm")
+var blocksCode = document.getElementById("blocks-code").innerHTML
+blocks.runCode(blocksCode)
+</script>
